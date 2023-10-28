@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {  /*edita o filho direto do body nesse caso o header*/
+    background-color: #2f3640; /* tudo que tiver a tag header muda de cor*/
+    padding: 16px 0; /*espaçamento do cabeçalho*/
+    color:#f5f6fa;
+    
+}
+
+header .container {
+    display: flex; /*todos os elementos da tag container dentro do elemento header de alinham lado a lado  */
+    align-items: center; /*alinha no centro todos os elementos do header container*/
+    justify-content: space-between; /*separa os elementos com o espaço máximo entre ele respeitando a margem*/
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*os 10% que sobraram são distribuídos uniformemente entre os artigos*/
+}
+
+.articles article img {
+    /*height: 180px; */
+    width: 100%; /* ajusta a imagem para o tamanho do article */
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,  
+.articles article {             /* aproveitou a sessão e incluiu articles */
+    margin-bottom: 16px;
+}
+
+.articles article {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block; /*evita sobrepor algum conteúdo*/
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bold; /*deixa a fonte em negrito*/
+    margin-top: 8px;
+}
+
+.articles article a:hover {          /*quando passar o moude em cima ele ativa*/
+    text-decoration: underline;      /*o texto fica sublinhado*/
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color:rgba(0, 255, 0, 0.10); 
+}
+
+#sports .articles article a{
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #e9e9b7;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#technology {
+    background-color:rgb(162, 214, 214); 
+}
+
+#technology .articles article a{
+    background-color: #353eb8;
+}
+
+#entertainment {
+    background-color: #c094c9;
+}
+
+#entertainment .articles article a{
+    background-color: #ff1a8d;
+}
